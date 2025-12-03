@@ -1,14 +1,2 @@
-/* ============================================================================ */
-/* IMPORTS & DEPENDENCIES                                                      */
-/* ============================================================================ */
-
-/**
- * Tailwind CSS Framework Import
- * Imports all Tailwind CSS utility classes for styling
- * Provides responsive design utilities and component classes
- */
+/* Remove everything and leave this minimal */
 @import "tailwindcss";
-
-/* ============================================================================ */
-/* END OF FILE                                                                  */
-/* ============================================================================ */

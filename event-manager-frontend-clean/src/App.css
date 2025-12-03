@@ -1,2 +1,15 @@
-/* Remove everything and leave this minimal */
-@import "tailwindcss";
+/* Remove everything and use this instead */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  body {
+    @apply antialiased text-gray-800 bg-gray-50;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-bold text-gray-900;
+  }
+}

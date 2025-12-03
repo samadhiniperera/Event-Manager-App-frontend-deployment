@@ -1,15 +1,38 @@
+// import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
+// import tailwindcss from '@tailwindcss/vite'
+
+// export default defineConfig({
+//   plugins: [
+//     react(),
+//     tailwindcss(), // Add this line
+//   ],
+//   build: {
+//     outDir: 'dist',
+//     sourcemap: true
+//   },
+//   server: {
+//     port: 3000
+//   }
+// })
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(), // Add this line
   ],
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: false,  // Changed from true to false (faster builds)
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        }
+      }
+    }
   },
   server: {
     port: 3000

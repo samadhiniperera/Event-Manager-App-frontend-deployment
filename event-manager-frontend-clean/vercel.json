@@ -1,8 +1,8 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "buildCommand": "cd event-manager-frontend-clean && npm run build",
+  "outputDirectory": "event-manager-frontend-clean/dist",
+  "devCommand": "cd event-manager-frontend-clean && npm run dev",
+  "installCommand": "cd event-manager-frontend-clean && npm install",
   "framework": "vite",
   "rewrites": [
     {
